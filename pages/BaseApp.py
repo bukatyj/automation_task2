@@ -15,7 +15,7 @@ class MainPage(BasePage):
 
     def find_elements(self, locator, time=10):
         return WebDriverWait(self.driver, time).until(EC.presence_of_all_elements_located(locator),
-                                                      message=f"Can't find element by locator {locator}")
+                                                      message=f"Can't find elements by locator {locator}")
 
     def click_element(self, locator, time=10):
         return WebDriverWait(self.driver, time).until(EC.element_to_be_clickable(locator),

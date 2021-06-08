@@ -14,3 +14,8 @@ class Locators:
         By.XPATH, "//div[@class='col-sm-12 col-xs-12 col-md-9 products-sort-order dropdown open']/div/a[5]"
     )
     LOCATOR_PRICE_FROM_HIGH = (By.XPATH, "//div[@class='product-price-and-shipping']/span[1]")
+    LOCATOR_PRODUCT = (By.XPATH, "//article[@class='product-miniature js-product-miniature']")
+    LOCATOR_DISCOUNT_PRODUCT = (By.XPATH, ".//div/ul/li")
+    LOCATOR_REGULAR_PRICE = (By.XPATH, ".//div/div[1]/div/span[@class='regular-price']")
+    LOCATOR_DISCOUNT_PERCENTAGE = (By.XPATH, ".//div/div[1]/div/span[@class='discount-percentage']")
+    LOCATOR_PRICE_IN_DISCOUNT = (By.XPATH, ".//div/div[1]/div/span[@class='price']")
